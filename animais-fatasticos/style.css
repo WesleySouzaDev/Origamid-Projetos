@@ -157,4 +157,29 @@ body {
     margin-bottom: 0.5rem;
     margin-left: 50px;
   }
+
+  /* ================================================================= */
+
+  & .mapa {
+    grid-column: 1 / 2;
+  }
+
+  & .dados {
+    grid-column: 3;
+
+    & li {
+      font-family: Helvetica, Arial;
+      margin-bottom: 1rem;
+      flex-wrap: nowrap;
+    }
+
+    & li::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 10px;
+      margin-right: 10px;
+      background: #fb5;
+    }
+  }
 }
