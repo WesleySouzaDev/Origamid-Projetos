@@ -52,7 +52,7 @@ body {
   width: 100%;
   padding: 10px;
   display: grid;
-  grid-template-columns: 90px 300px 1fr;
+  grid-template-columns: 90px 500px 1fr;
   grid-gap: 20px;
   margin-bottom: 4rem;
 
@@ -86,5 +86,75 @@ body {
     height: 10px;
     margin-right: 10px;
     background: #fb5;
+  }
+
+  & .animais-lista {
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+  }
+
+  & .animais-lista::-webkit-scrollbar {
+    width: 20px;
+  }
+  & .animais-lista::-webkit-scrollbar-thumb {
+    background: #fb5;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed;
+  }
+  & .animais-lista::-webkit-scrollbar-track {
+    background: #faf6ed;
+  }
+
+  & .animais-descricao {
+    grid-column: 3;
+    height: 470px;
+    overflow-y: scroll;
+  }
+
+  & .animais-descricao section {
+    margin-bottom: 3rem;
+  }
+
+  & .animais-descricao::-webkit-scrollbar {
+    width: 20px;
+  }
+  & .animais-descricao::-webkit-scrollbar-thumb {
+    background: #fb5;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed;
+  }
+  & .animais-descricao::-webkit-scrollbar-track {
+    background: #faf6ed;
+  }
+
+  /* ================================================================= */
+
+  & .faq-lista {
+    grid-column: 2 / 4;
+  }
+
+  & .faq-lista dt {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #e43;
+  }
+
+  & .faq-lista dt::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fb5;
+  }
+
+  & .faq-lista dd {
+    font-family: Helvetica, Arial;
+    margin-bottom: 0.5rem;
+    margin-left: 50px;
   }
 }
