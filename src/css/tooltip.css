@@ -1,0 +1,17 @@
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-tertiary);
+  color: var(--color-quaternary);
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  font-family: var(--font-ibm);
+  box-shadow: 0 0 0 0.3rem var(--color-primary),
+    0 0 0 0.6rem var(--color-tertiary);
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  z-index: 1000;
+}

@@ -1,0 +1,48 @@
+[data-dropdown-menu] {
+  position: relative;
+}
+
+[data-dropdown-menu] .dropdown-menu {
+  display: none;
+}
+
+[data-dropdown-menu]:hover .dropdown-menu,
+[data-dropdown-menu].ativo .dropdown-menu {
+  display: block;
+  animation: show-up 0.3s ease-in-out forwards;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 38px;
+  background: #e54;
+  border: 2px solid #333;
+  z-index: 300;
+
+  & li a:hover {
+    color: white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -8px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #e54;
+  }
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translatey(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}

@@ -1,0 +1,98 @@
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  border-radius: 0.1rem;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: showModal 0.3s forwards;
+
+  & .modal-content {
+    background: var(--color-quaternary);
+    display: flex;
+    flex-direction: column;
+    min-width: 23rem;
+    padding: 1rem;
+    border-radius: 0.1rem;
+    border: 0.5rem solid var(--color-primary);
+    box-shadow: 0 0 0 0.5rem var(--color-quaternary);
+
+    & .modal-header {
+      display: grid;
+      width: 100%;
+      padding: 1rem;
+      place-items: center;
+      font-family: var(--font-ibm);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+
+    & .modal-header button {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      top: -50px;
+      right: -50px;
+      background: var(--color-secondary);
+      padding: 0.5rem;
+      border: none;
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.1s ease-in-out;
+    }
+
+    & .modal-header button:hover {
+      border: 8px solid var(--color-quaternary);
+      box-shadow: 0 0 10px 0.1rem var(--color-tertiary);
+    }
+
+    & .modal-body form {
+      display: flex;
+      flex-direction: column;
+      font-family: var(--font-ibm);
+
+      & label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+        color: var(--color-tertiary);
+      }
+
+      & input {
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        border: 1px solid var(--color-tertiary);
+        font-size: 1.2rem;
+        color: var(--color-tertiary);
+        margin-bottom: 1rem;
+        outline: none;
+      }
+
+      & button[type='button'] {
+        background: var(--color-secondary);
+        color: var(--color-quaternary);
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+      }
+    }
+  }
+}
+
+.modal-container.ativo {
+  display: flex;
+}
