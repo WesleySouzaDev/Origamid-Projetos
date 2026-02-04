@@ -1,181 +1,312 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Animais Fatasticos</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="grid-container">
-        <nav class="menu">
-            <ul>
-                <li><a href="#animais">Animais</a></li>
-                <li data-dropdown-menu>
-                    <a href="#sobre">Sobre</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#Empresa">A empresa</a></li>
-                        <li><a href="#equipe">Equipe</a></li>
-                        <li><a href="#sócios">Sócios</a></li>
-                        <li><a href="#investidores">Investidores</a></li>
-                    </ul>
-                </li>
-                <li><a href="#faq">Faq</a></li>
-                <li><a href="#numeros">Números</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a data-modal-button="open" href="#dev">login →</a></li>
+      <nav class="menu">
+        <ul>
+          <li><a href="#animais">Animais</a></li>
+          <li data-dropdown-menu>
+            <a href="#sobre">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="#Empresa">A empresa</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#sócios">Sócios</a></li>
+              <li><a href="#investidores">Investidores</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#numeros">Números</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a data-modal-button="open" href="#dev">login →</a></li>
+        </ul>
+      </nav>
 
-        <section class="grid-section animais" data-scroll="suave" id="animais">
-            <h1 class="titulo">Animais Fantásticos</h1>
-            <ul class="animais-lista" data-tab-menu="menu">
-                <li>
-                    <img src="./src/img/imagem1.jpg">
-                </li>
-                <li>
-                    <img src="./src/img/imagem2.jpg">
-                </li>
-                <li>
-                    <img src="./src/img/imagem3.jpg">
-                </li>
-                <li>
-                    <img src="./src/img/imagem4.jpg">
-                </li>
-                <li>
-                    <img src="./src/img/imagem5.jpg">
-                </li>
-                <li>
-                    <img src="./src/img/imagem6.jpg">
-                </li>
-            </ul>
-            <div class="animais-descricao" data-tab-content="content">
-                <section data-animate="show-left">
-                    <h2>Onça</h2>
-                    <p>A onça-pintada (Panthera onca) é o maior felino das Américas e um dos predadores mais poderosos da natureza.</p>
-                    <p> Encontrada principalmente em florestas tropicais, como a Amazônia e o Pantanal, ela se destaca por sua pelagem dourada com manchas pretas, que ajudam na camuflagem.</p>
-                    <p>Diferente de outros felinos, a onça tem uma mordida incrivelmente forte, capaz de perfurar o casco de tartarugas e o crânio de presas maiores. Apesar de sua força e habilidade como caçadora, a espécie enfrenta ameaças devido ao desmatamento e à caça ilegal. Proteger a onça é essencial para manter o equilíbrio dos ecossistemas onde ela vive.</p>
-                </section>
-                <section data-animate="show-down">
-                    <h2>Raposa</h2>
-                    <p>A raposa é um mamífero astuto e adaptável, encontrado em diversos habitats ao redor do mundo, desde florestas até áreas urbanas. </p>
-                    <p>A espécie mais conhecida, a raposa-vermelha (Vulpes vulpes), possui uma pelagem avermelhada, cauda longa e um olfato aguçado, características que a tornam uma excelente caçadora. Onívora, sua dieta inclui pequenos animais, frutas e até restos de comida humana.</p>
-                    <p>Apesar de sua aparência elegante, a raposa é um animal solitário e discreto, movendo-se com agilidade, principalmente à noite. Inteligente e versátil, ela simboliza esperteza em diversas culturas e continua fascinando por sua incrível capacidade de adaptação.</p>
-                </section>
-                <section data-animate="show-left">
-                    <h2>Lobo</h2>
-                    <p>O lobo (Canis lupus) é um dos predadores mais icônicos do mundo, conhecido por sua inteligência, força e forte senso de grupo. Encontrados em diversos habitats, desde florestas até tundras geladas, eles desempenham um papel essencial no equilíbrio ecológico.</p>
-                    <p>Vivendo em matilhas bem organizadas, os lobos caçam juntos para derrubar presas maiores, como cervos e alces. Sua comunicação é complexa, envolvendo uivos, expressões faciais e linguagem corporal. </p>
-                    <p>Apesar de sua importância na natureza, os lobos foram historicamente perseguidos pelo homem, mas esforços de conservação vêm ajudando na recuperação de suas populações. Símbolos de resistência e lealdade, continuam a inspirar admiração e respeito.</p>
-                </section>
-                <section data-animate="show-down">
-                    <h2>Águia</h2>
-                    <p>A águia é uma ave de rapina majestosa, conhecida por sua visão aguçada, voo poderoso e habilidades de caça impressionantes.</p>
-                    <p>Entre as espécies mais famosas, a águia-real (Aquila chrysaetos) e a águia-careca (Haliaeetus leucocephalus) se destacam por sua imponência e presença em diversas culturas como símbolos de força e liberdade.</p>
-                    <p> Com garras afiadas e um bico curvado e resistente, a águia captura suas presas com precisão, muitas vezes mergulhando em alta velocidade. Habitante de montanhas, florestas e planícies abertas, ela desempenha um papel crucial no equilíbrio dos ecossistemas. Respeitada e admirada, a águia representa determinação e grandeza na natureza.</p>
-                </section>
-                <section data-animate="show-left">
-                    <h2>Tubarão</h2>
-                    <p>O tubarão é um dos predadores mais fascinantes e antigos dos oceanos, existindo há milhões de anos. Com um corpo hidrodinâmico, sentidos altamente desenvolvidos e uma mordida poderosa, ele domina os mares como um caçador eficiente.</p>
-                    <p>Existem mais de 500 espécies, desde o temido tubarão-branco (Carcharodon carcharias) até o pacífico tubarão-baleia (Rhincodon typus), o maior peixe do mundo.</p>
-                    <p>Apesar de sua fama de perigoso, a maioria dos tubarões não representa ameaça aos humanos. Infelizmente, eles estão sob grande risco devido à pesca predatória e à destruição de habitats. Essenciais para o equilíbrio marinho, os tubarões merecem ser protegidos e respeitados.</p>
-                </section>
-                <section data-animate="show-down">
-                    <h2>Borboleta</h2>
-                    <p>A borboleta é um dos insetos mais encantadores da natureza, conhecida por suas cores vibrantes e voo delicado. Passa por uma incrível transformação ao longo de sua vida, desde a fase de lagarta até o desabrochar de suas asas na fase adulta.</p>
-                    <p>Encontradas em diversos habitats ao redor do mundo, as borboletas desempenham um papel essencial na polinização das plantas.</p>
-                    <p>Suas asas leves e coloridas não são apenas um espetáculo visual, mas também uma forma de defesa, ajudando-as a se camuflar ou afastar predadores. Símbolo de renovação e beleza, a borboleta representa a efemeridade da vida e a constante transformação da natureza.</p>
-                </section>
-            </div>
-        </section>
+      <section class="grid-section animais" data-scroll="suave" id="animais">
+        <h1 class="titulo">Animais Fantásticos</h1>
+        <ul class="animais-lista" data-tab-menu="menu">
+          <li>
+            <img src="./src/img/imagem1.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem2.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem3.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem4.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem5.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem6.jpg" />
+          </li>
+        </ul>
+        <div class="animais-descricao" data-tab-content="content">
+          <section data-animate="show-left">
+            <h2>Onça</h2>
+            <p>
+              A onça-pintada (Panthera onca) é o maior felino das Américas e um
+              dos predadores mais poderosos da natureza.
+            </p>
+            <p>
+              Encontrada principalmente em florestas tropicais, como a Amazônia
+              e o Pantanal, ela se destaca por sua pelagem dourada com manchas
+              pretas, que ajudam na camuflagem.
+            </p>
+            <p>
+              Diferente de outros felinos, a onça tem uma mordida incrivelmente
+              forte, capaz de perfurar o casco de tartarugas e o crânio de
+              presas maiores. Apesar de sua força e habilidade como caçadora, a
+              espécie enfrenta ameaças devido ao desmatamento e à caça ilegal.
+              Proteger a onça é essencial para manter o equilíbrio dos
+              ecossistemas onde ela vive.
+            </p>
+          </section>
+          <section data-animate="show-down">
+            <h2>Raposa</h2>
+            <p>
+              A raposa é um mamífero astuto e adaptável, encontrado em diversos
+              habitats ao redor do mundo, desde florestas até áreas urbanas.
+            </p>
+            <p>
+              A espécie mais conhecida, a raposa-vermelha (Vulpes vulpes),
+              possui uma pelagem avermelhada, cauda longa e um olfato aguçado,
+              características que a tornam uma excelente caçadora. Onívora, sua
+              dieta inclui pequenos animais, frutas e até restos de comida
+              humana.
+            </p>
+            <p>
+              Apesar de sua aparência elegante, a raposa é um animal solitário e
+              discreto, movendo-se com agilidade, principalmente à noite.
+              Inteligente e versátil, ela simboliza esperteza em diversas
+              culturas e continua fascinando por sua incrível capacidade de
+              adaptação.
+            </p>
+          </section>
+          <section data-animate="show-left">
+            <h2>Lobo</h2>
+            <p>
+              O lobo (Canis lupus) é um dos predadores mais icônicos do mundo,
+              conhecido por sua inteligência, força e forte senso de grupo.
+              Encontrados em diversos habitats, desde florestas até tundras
+              geladas, eles desempenham um papel essencial no equilíbrio
+              ecológico.
+            </p>
+            <p>
+              Vivendo em matilhas bem organizadas, os lobos caçam juntos para
+              derrubar presas maiores, como cervos e alces. Sua comunicação é
+              complexa, envolvendo uivos, expressões faciais e linguagem
+              corporal.
+            </p>
+            <p>
+              Apesar de sua importância na natureza, os lobos foram
+              historicamente perseguidos pelo homem, mas esforços de conservação
+              vêm ajudando na recuperação de suas populações. Símbolos de
+              resistência e lealdade, continuam a inspirar admiração e respeito.
+            </p>
+          </section>
+          <section data-animate="show-down">
+            <h2>Águia</h2>
+            <p>
+              A águia é uma ave de rapina majestosa, conhecida por sua visão
+              aguçada, voo poderoso e habilidades de caça impressionantes.
+            </p>
+            <p>
+              Entre as espécies mais famosas, a águia-real (Aquila chrysaetos) e
+              a águia-careca (Haliaeetus leucocephalus) se destacam por sua
+              imponência e presença em diversas culturas como símbolos de força
+              e liberdade.
+            </p>
+            <p>
+              Com garras afiadas e um bico curvado e resistente, a águia captura
+              suas presas com precisão, muitas vezes mergulhando em alta
+              velocidade. Habitante de montanhas, florestas e planícies abertas,
+              ela desempenha um papel crucial no equilíbrio dos ecossistemas.
+              Respeitada e admirada, a águia representa determinação e grandeza
+              na natureza.
+            </p>
+          </section>
+          <section data-animate="show-left">
+            <h2>Tubarão</h2>
+            <p>
+              O tubarão é um dos predadores mais fascinantes e antigos dos
+              oceanos, existindo há milhões de anos. Com um corpo hidrodinâmico,
+              sentidos altamente desenvolvidos e uma mordida poderosa, ele
+              domina os mares como um caçador eficiente.
+            </p>
+            <p>
+              Existem mais de 500 espécies, desde o temido tubarão-branco
+              (Carcharodon carcharias) até o pacífico tubarão-baleia (Rhincodon
+              typus), o maior peixe do mundo.
+            </p>
+            <p>
+              Apesar de sua fama de perigoso, a maioria dos tubarões não
+              representa ameaça aos humanos. Infelizmente, eles estão sob grande
+              risco devido à pesca predatória e à destruição de habitats.
+              Essenciais para o equilíbrio marinho, os tubarões merecem ser
+              protegidos e respeitados.
+            </p>
+          </section>
+          <section data-animate="show-down">
+            <h2>Borboleta</h2>
+            <p>
+              A borboleta é um dos insetos mais encantadores da natureza,
+              conhecida por suas cores vibrantes e voo delicado. Passa por uma
+              incrível transformação ao longo de sua vida, desde a fase de
+              lagarta até o desabrochar de suas asas na fase adulta.
+            </p>
+            <p>
+              Encontradas em diversos habitats ao redor do mundo, as borboletas
+              desempenham um papel essencial na polinização das plantas.
+            </p>
+            <p>
+              Suas asas leves e coloridas não são apenas um espetáculo visual,
+              mas também uma forma de defesa, ajudando-as a se camuflar ou
+              afastar predadores. Símbolo de renovação e beleza, a borboleta
+              representa a efemeridade da vida e a constante transformação da
+              natureza.
+            </p>
+          </section>
+        </div>
+      </section>
 
-        <section class="grid-section faq" data-scroll="suave" id="faq">
-            <h1 class="titulo">faq</h1>
-            <dl class="faq-lista" data-accordion="accordion">
-                <dt>Qual a idade dos animais?</dt>
-                <dd>A idade dos animais varia conforme a espécie, o ambiente e fatores genéticos. Alguns vivem poucos dias, como certos insetos, enquanto outros podem ultrapassar séculos, como tartarugas e algumas baleias. Mamíferos de grande porte, como elefantes e baleias, tendem a ter vidas longas, enquanto pequenos roedores vivem poucos anos. A expectativa de vida também depende de predadores, doenças e condições ambientais.</dd>
-                <dt>Qual a maior população de animais?</dt>
-                <dd>Os animais com maior população são, em geral, insetos, com destaque para as formigas, que somam trilhões em todo o mundo. Entre os vertebrados, os peixes, como o arenque e o bacalhau, possuem populações enormes nos oceanos. Entre as aves, o estorninho e o pardal estão entre os mais numerosos. A abundância de uma espécie depende de fatores como habitat, reprodução e disponibilidade de alimento.</dd>
-                <dt>Eles são fascinantes?</dt>
-                <dd>Sim, animais são fascinantes. Eles são seres vivos, com capacidades de adaptação e resistência, que podem ser encontrados em vários habitats diferentes. Eles também são importantes para a ecologia, pois desempenham um papel crucial na conservação da biodiversidade e na manutenção do equilíbrio ecológico. Embora possam ser perigosos, animais também são importantes para a saúde humana, como o gato, que é usado como animal de estimação e como alimento.</dd>
-                <dt>Como protejamos os animais?</dt>
-                <dd>Proteger animais é importante para manter o equilíbrio ecológico e para preservar a biodiversidade. Isso pode ser feito de várias maneiras, como a conservação de habitats, a controle de predadores e a promoção de animais de risco. Além disso, é importante manter a saúde dos animais, como a vacinação e a higiene adequada. A educação ambiental também é uma forma de proteção, pois ajuda a criar um ambiente mais saudável para os animais.</dd>
-            </dl>
-        </section>
+      <section class="grid-section faq" data-scroll="suave" id="faq">
+        <h1 class="titulo">faq</h1>
+        <dl class="faq-lista" data-accordion="accordion">
+          <dt>Qual a idade dos animais?</dt>
+          <dd>
+            A idade dos animais varia conforme a espécie, o ambiente e fatores
+            genéticos. Alguns vivem poucos dias, como certos insetos, enquanto
+            outros podem ultrapassar séculos, como tartarugas e algumas baleias.
+            Mamíferos de grande porte, como elefantes e baleias, tendem a ter
+            vidas longas, enquanto pequenos roedores vivem poucos anos. A
+            expectativa de vida também depende de predadores, doenças e
+            condições ambientais.
+          </dd>
+          <dt>Qual a maior população de animais?</dt>
+          <dd>
+            Os animais com maior população são, em geral, insetos, com destaque
+            para as formigas, que somam trilhões em todo o mundo. Entre os
+            vertebrados, os peixes, como o arenque e o bacalhau, possuem
+            populações enormes nos oceanos. Entre as aves, o estorninho e o
+            pardal estão entre os mais numerosos. A abundância de uma espécie
+            depende de fatores como habitat, reprodução e disponibilidade de
+            alimento.
+          </dd>
+          <dt>Eles são fascinantes?</dt>
+          <dd>
+            Sim, animais são fascinantes. Eles são seres vivos, com capacidades
+            de adaptação e resistência, que podem ser encontrados em vários
+            habitats diferentes. Eles também são importantes para a ecologia,
+            pois desempenham um papel crucial na conservação da biodiversidade e
+            na manutenção do equilíbrio ecológico. Embora possam ser perigosos,
+            animais também são importantes para a saúde humana, como o gato, que
+            é usado como animal de estimação e como alimento.
+          </dd>
+          <dt>Como protejamos os animais?</dt>
+          <dd>
+            Proteger animais é importante para manter o equilíbrio ecológico e
+            para preservar a biodiversidade. Isso pode ser feito de várias
+            maneiras, como a conservação de habitats, a controle de predadores e
+            a promoção de animais de risco. Além disso, é importante manter a
+            saúde dos animais, como a vacinação e a higiene adequada. A educação
+            ambiental também é uma forma de proteção, pois ajuda a criar um
+            ambiente mais saudável para os animais.
+          </dd>
+        </dl>
+      </section>
 
-        <section class="grid-section numeros" data-scroll="suave" id="numeros">
-            <h1 class="titulo">Números</h1>
-            <div class="numeros-grid">
-                <div class="numero-animal">
-                    <h3>Onça</h3>
-                    <span data-numero>5472</span>
-                </div>
-                <div class="numero-animal">
-                    <h3>Raposa</h3>
-                    <span data-numero>12000</span>
-                </div>
-                <div class="numero-animal">
-                    <h3>Lobo</h3>
-                    <span data-numero>35000</span>
-                </div>
-                <div class="numero-animal">
-                    <h3>Àguia</h3>
-                    <span data-numero>1029</span>
-                </div>
-                <div class="numero-animal">
-                    <h3>Tubarão</h3>
-                    <span data-numero>92434</span>
-                </div>
-                <div class="numero-animal">
-                    <h3>Borboleta</h3>
-                    <span data-numero>275</span>
-                </div>
-            </div>
-        </section>
+      <section class="grid-section numeros" data-scroll="suave" id="numeros">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid">
+          <div class="numero-animal">
+            <h3>Onça</h3>
+            <span data-numero>5472</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Raposa</h3>
+            <span data-numero>12000</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Lobo</h3>
+            <span data-numero>35000</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Àguia</h3>
+            <span data-numero>1029</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Tubarão</h3>
+            <span data-numero>92434</span>
+          </div>
+          <div class="numero-animal">
+            <h3>Borboleta</h3>
+            <span data-numero>275</span>
+          </div>
+        </div>
+      </section>
 
-        <section class="grid-section contato" data-scroll="suave" id="contato">
-            <h1 class="titulo">Contato</h1>
-            <div class="mapa" data-tooltip aria-label="próximo ao hotel candeias.">
-                <img alt="mapa">
-            </div>
-            <ul class="dados">
-                <li>Telefone: +55 (11) 9988-6644</li>
-                <li>Email: contato@animais-fatasticos.com.br</li>
-                <li>Instagram: @animais_fatasticos</li>W
-                <li>Facebook: https://www.facebook.com/animais.fatasticos</li>
-            </ul>
-        </section>
+      <section class="grid-section contato" data-scroll="suave" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <div class="mapa" data-tooltip aria-label="próximo ao hotel candeias.">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.095532146273!2d-48.63218711944873!3d-26.995527616257174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b6123caf364b%3A0x34b82234533ab963!2sR.%202700%2C%2060-110%20-%20Centro%2C%20Balne%C3%A1rio%20Cambori%C3%BA%20-%20SC%2C%2088330-058!5e0!3m2!1spt-BR!2sbr!4v1770213243528!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <ul class="dados">
+          <li>Telefone: +55 (11) 9988-6644</li>
+          <li>Email: contato@animais-fatasticos.com.br</li>
+          <li>Instagram: @animais_fatasticos</li>
+          W
+          <li>Facebook: https://www.facebook.com/animais.fatasticos</li>
+        </ul>
+      </section>
 
-        <footer class="copy">
-            <p>© 2025 Animais Fatasticos - Todos os direitos reservados</p>
-        </footer>
+      <footer class="copy">
+        <p>© 2025 Animais Fatasticos - Todos os direitos reservados</p>
+      </footer>
     </div>
 
     <section class="modal-container" data-modal-container="container">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Login</h2>
-                <button data-modal-button="close">X</button>
-            </div>
-            <div class="modal-body">
-                <form action="">
-                    <label for="nome">Nome</label>
-                    <input type="nome" name="nome" id="nome" placeholder="Nome">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password" placeholder="Senha">
-                    <button type="button">Entrar</button>
-                </form>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Login</h2>
+          <button data-modal-button="close">X</button>
         </div>
+        <div class="modal-body">
+          <form action="">
+            <label for="nome">Nome</label>
+            <input type="nome" name="nome" id="nome" placeholder="Nome" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Senha"
+            />
+            <button type="button">Entrar</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <script type="module" src="./src/js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
